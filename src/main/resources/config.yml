@@ -1,8 +1,10 @@
-# This is the default config.yml file. You can change the values to your liking.
-api-url: http://localhost:3001 # This is the url of the API
-mode: PLAYER_SERVER # This is the mode of the plugin. PLAYER_SERVER is the only mode available for now.
+# This is the API configuration.
+api-settings:
+  url: http://localhost:3001 # This is the url of the API
+  secret: secret # This is the secret of the API
 
 # This is the global configuration.
 global-settings:
+  mode: PLAYER_SERVER # This is the mode of the plugin. PLAYER_SERVER is the only mode available for now.
   hide-entities-without-pack: true # This will hide entities that don't have a resource pack.
   resource-pack-sender: true # This will send the resource pack to the player.
