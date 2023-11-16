@@ -2,4 +2,4 @@ name: CosmeticsX
 version: '${version}'
 main: fr.zebulon.cosmeticsx.CosmeticsX
 api-version: 1.20
-authors: [Hokib]
+author: ZebulonFr
