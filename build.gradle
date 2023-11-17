@@ -20,6 +20,7 @@ repositories {
 
 dependencies {
     compileOnly "io.papermc.paper:paper-api:1.20.2-R0.1-SNAPSHOT"
+    compileOnly "com.konghq:unirest-java:4.0.0-RC2"
 }
 
 def targetJavaVersion = 17
