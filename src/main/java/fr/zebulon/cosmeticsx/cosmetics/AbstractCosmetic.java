@@ -35,14 +35,14 @@ public abstract class AbstractCosmetic implements ICosmeticFactory {
     @Override
     public Optional<AbstractCosmetic> fromQualifiedId(String query) {
         // Split the query into chunks
-        final String[] chunks = query.split(":");
+        final String[] parts = query.split(":");
 
         // Return an empty optional if the query is invalid
-        if (chunks.length <= 2) return Optional.empty();
+        if (parts.length <= 2) return Optional.empty();
 
         // Define the variables with the chunks values
-        final String categoryId = chunks[0];
-        final String cosmeticId = chunks[1];
+        final String categoryId = parts[0];
+        final String cosmeticId = parts[1];
 
         // Return the cosmetic if the category is valid and the cosmetic exists
         return fromCategoryId(categoryId, cosmeticId);

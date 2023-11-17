@@ -2,6 +2,7 @@ package fr.zebulon.cosmeticsx.cosmetics;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
+import fr.zebulon.cosmeticsx.models.responses.CosmeticProfileResponse;
 
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
