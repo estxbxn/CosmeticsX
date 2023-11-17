@@ -7,9 +7,9 @@ package fr.zebulon.cosmeticsx.configuration;
 public enum PluginMode {
 
     /**
-     * UNKNOWN plugin mode is to get information of the Default API.
+     * LOBBY plugin mode is to get information of the Default API.
      */
-    UNKNOWN,
+    LOBBY,
 
     /**
      * PLAYER_SERVER plugin mode is to get information of players from the API.

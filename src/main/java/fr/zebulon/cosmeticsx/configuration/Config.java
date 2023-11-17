@@ -30,7 +30,7 @@ public class Config {
         // Switch the mode variable
         switch (mode) {
             // If the mode is UNKNOWN
-            case UNKNOWN -> {
+            case LOBBY -> {
                 // Set the apiUrl and apiSecret variables as default values
                 this.apiUrl = "http://localhost:3001";
                 this.apiSecret = "secret";
