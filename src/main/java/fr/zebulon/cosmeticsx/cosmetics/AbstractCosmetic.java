@@ -1,7 +1,7 @@
 package fr.zebulon.cosmeticsx.cosmetics;
 
 import fr.zebulon.cosmeticsx.cosmetics.factory.ICosmeticFactory;
-import fr.zebulon.cosmeticsx.cosmetics.permission.IPermission;
+import fr.zebulon.cosmeticsx.cosmetics.factory.permission.IPermission;
 import fr.zebulon.cosmeticsx.utils.EnumUtil;
 import net.kyori.adventure.text.Component;
 import org.bukkit.inventory.ItemStack;

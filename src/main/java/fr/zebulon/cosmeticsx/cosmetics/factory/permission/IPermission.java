@@ -1,4 +1,4 @@
-package fr.zebulon.cosmeticsx.cosmetics.permission;
+package fr.zebulon.cosmeticsx.cosmetics.factory.permission;
 
 import fr.zebulon.cosmeticsx.CosmeticsX;
 import fr.zebulon.cosmeticsx.cosmetics.AbstractCosmetic;
