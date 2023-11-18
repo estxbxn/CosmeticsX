@@ -15,7 +15,7 @@ public class PollingRankContainer extends PollingContainer<List<PlayerRank>> {
     private final CosmeticsX plugin;
 
     public PollingRankContainer(CosmeticsX plugin) {
-        super(plugin, List.of(), 20 * 30);
+        super(plugin, List.of(), 600); // Every 30 seconds poll the data
         this.plugin = plugin;
     }
 
