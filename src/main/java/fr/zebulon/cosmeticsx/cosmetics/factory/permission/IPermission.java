@@ -4,6 +4,10 @@ import fr.zebulon.cosmeticsx.CosmeticsX;
 import fr.zebulon.cosmeticsx.cosmetics.AbstractCosmetic;
 import fr.zebulon.cosmeticsx.cosmetics.CosmeticCategory;
 import fr.zebulon.cosmeticsx.cosmetics.CosmeticCollection;
+import fr.zebulon.cosmeticsx.models.CosmeticData;
+import fr.zebulon.cosmeticsx.models.CosmeticProfile;
+import fr.zebulon.cosmeticsx.models.rank.PlayerRank;
+import fr.zebulon.cosmeticsx.models.responses.CosmeticProfileResponse;
 import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
@@ -55,7 +59,7 @@ public interface IPermission {
      */
     static IPermission hasRank(String name) {
         return player -> CosmeticsX.get()
-                .getCosmeticsManager()
+                .getManager()
                 .getProfile(player.getUniqueId())
                 .thenApplyAsync(maybeProfile -> maybeProfile
                         .flatMap((res) -> PlayerRank.getBackingRank(res.getRank())) // get rank for this player
@@ -82,7 +86,7 @@ public interface IPermission {
      */
     static IPermission hasPurchased(final String category, final String id) {
         return player -> CosmeticsX.get()
-                .getCosmeticsManager()
+                .getManager()
                 .getProfile(player.getUniqueId())
                 .thenApplyAsync((maybeResponse) ->
                         maybeResponse.map(CosmeticProfileResponse::getProfile)
