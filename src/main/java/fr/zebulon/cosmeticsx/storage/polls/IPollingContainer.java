@@ -21,7 +21,15 @@ public interface IPollingContainer<T> {
      */
     Optional<T> poll();
 
+    /**
+     * Process the polling state to get the data
+     *
+     * @param state
+     */
     void process(T state);
 
+    /**
+     * Cancel the polling state and return the task as cancelled
+     */
     void cancel();
 }
