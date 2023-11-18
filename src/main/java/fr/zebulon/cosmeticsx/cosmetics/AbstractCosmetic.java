@@ -13,7 +13,7 @@ public abstract class AbstractCosmetic implements ICosmeticFactory {
 
     private final String id;
     private final CosmeticCategory category;
-    protected UUID owner;
+    private UUID owner;
 
     protected AbstractCosmetic(String id, CosmeticCategory category) {
         this.id = id;
@@ -62,6 +62,10 @@ public abstract class AbstractCosmetic implements ICosmeticFactory {
 
     public Optional<UUID> getOwner() {
         return Optional.ofNullable(owner);
+    }
+
+    public void setOwner(UUID owner) {
+        this.owner = owner;
     }
 
     public IPermission getPermission() {
